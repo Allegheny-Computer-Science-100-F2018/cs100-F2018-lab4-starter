@@ -56,4 +56,5 @@ public class DisplayGraphicalScene extends Application {
     // call the launch method, which will trigger a start call
     launch(args);
   }
+
 }
