@@ -1,0 +1,29 @@
+---
+name: cmpsc-100-fall-2018-lab4
+break: true
+indent: 4
+---
+# --> check the source code for various characteristics
+# note that without an "--exact" the check is an "at least"
+src/main:
+    java:
+        labfour/DisplayGraphicalScene.java:
+            --single 10 --language Java
+            --multi 5 --language Java
+            --fragment "Circle(" --count 5
+            --fragment "Line(" --count 3
+            --fragment "Rectangle(" --count 3
+            --fragment "Ellipse(" --count 2
+            --fragment "A Sophisticated Graphical Scene" --count 1
+# --> check the technical writing
+# mdl is a Markdown linting tool
+# proselint checks writing for common mistakes
+writing/reflection.md:
+    mdl
+    proselint
+    --paragraphs 1 --exact
+    --words 100
+# --> check the number of commits beyond a threshold
+--commits 10
+# NOTE: No terminal output checks for this program due to graphics!
+# Do not reuse this configuration for later assignments
