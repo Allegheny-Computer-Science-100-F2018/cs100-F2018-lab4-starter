@@ -36,9 +36,20 @@ public class DisplayGraphicalScene extends Application {
    * be called by the main method's invocation of start.
    */
   public void start(Stage primaryStage) {
-
     // TODO: Add all of the required graphics code to
     // ensure that your program displays a graphical scene
+
+    // create a sun that will be filled with a gold color
+    Circle sun = new Circle(50, 50, 30);
+    sun.setFill(Color.GOLD);
+
+    // TODO: Add all of your other graphical objects to the root
+
+    // create a group that contains the sun
+    Group mainGroup = new Group(sun);
+
+    // create a scene with a canvas, background color, and a group of graphics
+    Scene scene = new Scene(mainGroup, CANVAS_WIDTH, CANVAS_HEIGHT, Color.LIGHTBLUE);
 
     // TODO: set the title of the provided primaryStage
     primaryStage.setTitle("");
