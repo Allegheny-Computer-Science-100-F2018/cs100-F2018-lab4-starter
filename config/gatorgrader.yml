@@ -15,6 +15,7 @@ src/main:
             --fragment "Rectangle(" --count 3
             --fragment "Ellipse(" --count 2
             --fragment "A Sophisticated Graphical Scene" --count 1
+            --fragment "TODO" --count 0 --exact
 # --> check the technical writing
 # mdl is a Markdown linting tool
 # proselint checks writing for common mistakes
