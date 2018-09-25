@@ -141,6 +141,7 @@ your submission must pass the following checks:
   * Constructs and displays at least three `Line` objects
   * Constructs and displays at least three `Rectangle` objects
   * Constructs and displays at least two `Ellipse` objects
+  * Does not contain any task completion labels inside of the source code
   * Displays a canvas with the label `A Sophisticated Graphical Scene`
   * Runs correctly without crashing or producing an error
 
